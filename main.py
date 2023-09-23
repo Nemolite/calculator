@@ -38,4 +38,4 @@ def main():
 if __name__ == '__main__':
     main()
 
-#Поторапливатесь с проектом у нас дедлайн!!!!!!!!!!!
+#https://webhamster.ru/mytetrashare/index/mtb339/1551341575q1m1dfstrq
