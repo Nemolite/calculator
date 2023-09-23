@@ -7,10 +7,11 @@ class Example(Frame):
         self.initUI()
 
     def initUI(self):
-        num = StringVar()  # создадим переменную для отображения значений на табло калькулятора
-        num.set(0)  # установим значение переменной равное 0
-        label = Entry(text=num, justify=RIGHT)
-        label.pack()
+        undo_stack = []
+        num = StringVar()
+        num.set(0)
+        self.label = Entry(text=num, justify=RIGHT)
+        self.label.pack()
 
         Button(text=1).place(x=0, y=50)
         Button(text=2).place(x=75, y=50)
@@ -27,6 +28,9 @@ class Example(Frame):
         Button(text="-").place(x=150, y=100)
         Button(text="+").place(x=230, y=100)
         Button(text="=").place(x=310, y=100)
+
+    def on_button_click(self, value):
+        pass
 
 def main():
     root = Tk()
